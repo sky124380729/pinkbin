@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "dist",
+      "sourceMap": false,
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowJs": false,
+      "strict": true,
+      "noUnusedLocals": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "removeComments": false,
+      "jsx": "preserve",
+      "lib": ["esnext", "dom"],
+      "types": ["node"],
+      "rootDir": ".",
+      "declaration": true,
+      // "declarationDir": "dist/types",
+      "paths": {
+        // "@vue/compat": ["packages/vue-compat/src"],
+        // "@vue/*": ["packages/*/src"],
+        // "vue": ["packages/vue/src"]
+      }
+    },
+    "include": [
+      "packages/global.d.ts",
+      "packages/*/src"
+    ]
+}
