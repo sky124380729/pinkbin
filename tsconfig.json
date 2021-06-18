@@ -21,7 +21,7 @@
         // "@vue/compat": ["packages/vue-compat/src"],
         // "@vue/*": ["packages/*/src"],
         // "vue": ["packages/vue/src"]
-      }
+      },
     },
     "include": [
       "packages/global.d.ts",

@@ -8,5 +8,3 @@ export function useDOMCreate(nodeId: string) {
 		document.body.removeChild(node)
 	})
 }
-
-export default useDOMCreate

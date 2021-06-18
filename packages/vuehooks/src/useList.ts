@@ -21,4 +21,3 @@ export function useList(action: Fn, labelKey?: string, valueKey = 'id') {
 	})
 	return list
 }
-export default useList

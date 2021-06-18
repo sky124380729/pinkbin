@@ -2,7 +2,9 @@
 	"name": "@levi/utils",
 	"version": "1.0.0",
 	"description": "",
-	"main": "main.ts",
+	"main": "index.js",
+	"module": "dist/utils.js",
+	"typings": "./index.d.ts",
 	"buildOptions": {
 		"name": "@levi/utils"
 	},

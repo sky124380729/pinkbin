@@ -2,6 +2,7 @@ import { defineConfig } from 'rollup'
 import path from 'path'
 import rimraf from 'rimraf'
 import typescript from 'rollup-plugin-typescript2'
+import nodeResolve from '@rollup/plugin-node-resolve'
 // import { terser } from 'rollup-plugin-terser'
 
 if (!process.env.TARGET) {
@@ -40,10 +41,10 @@ export default defineConfig({
 			tsconfigOverride: {
 				compilerOptions: {
 					declaration: true
-					// declarationDir: 'dist/types' //now it not work,why
 				}
 			}
-		})
+		}),
+		nodeResolve()
 		// terser()
 	]
 })
