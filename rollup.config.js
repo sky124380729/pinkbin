@@ -40,7 +40,7 @@ export default defineConfig({
 			tsconfig: path.resolve(__dirname, 'tsconfig.json'),
 			tsconfigOverride: {
 				compilerOptions: {
-					declaration: true
+					declaration: false
 				}
 			}
 		}),

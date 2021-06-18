@@ -1,12 +1,12 @@
 {
-	"name": "@levi/utils",
+	"name": "@pinkbin/utils",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"module": "dist/utils.js",
 	"typings": "./index.d.ts",
 	"buildOptions": {
-		"name": "@levi/utils"
+		"name": "@pinkbin/utils"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

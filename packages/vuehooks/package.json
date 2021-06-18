@@ -1,18 +1,21 @@
 {
-	"name": "@levi/vuehooks",
+	"name": "@pinkbin/vuehooks",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"module": "dist/vuehooks.js",
 	"typings": "./index.d.ts",
 	"buildOptions": {
-		"name": "@levi/vuehooks"
+		"name": "@pinkbin/vuehooks"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
 	"license": "ISC",
+	"devDependencies": {
+		"vue": "^3.1.1"
+	},
 	"peerDependencies": {
 		"vue": "^3.1.1"
 	}

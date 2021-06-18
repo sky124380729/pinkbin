@@ -1,5 +1,5 @@
 {
-	"name": "levi",
+	"name": "pinkbin",
 	"version": "1.0.0",
 	"description": "",
 	"private": true,
@@ -10,7 +10,11 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint --ext .{vue,ts,js,tsx} packages/*/src/**",
-		"build": "rimraf dist && rollup -c"
+		"build": "rimraf dist && rollup -c",
+		"build:utils": "rollup -c --environment TARGET:utils",
+		"build:vuehooks": "rollup -c --environment TARGET:vuehooks",
+		"publish:utils": "cd ./packages/utils && npm publish --access public",
+		"publish:vuehooks": "cd ./packages/vuehooks && npm publish --access public"
 	},
 	"author": "",
 	"license": "ISC",
