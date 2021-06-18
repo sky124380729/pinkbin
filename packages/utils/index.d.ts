@@ -16,7 +16,7 @@ export declare function deepMerge<T = any>(src: any, target: any): T
 export declare function filterUniqueByKey<T, K extends keyof T>(arr: T[], key: K): T[]
 export declare function flowRight(...fns: Fn[]): (value: any) => any
 export declare function ownAddEventListener(scope: Window | HTMLElement, type: string, handler: any, capture?: boolean): () => void
-export declare function ft(eltaTime: number, distance: number, duration: number): number
+export declare function ft(eltaTime: number, distance: number, duration?: number): number
 export declare function JsonParse<T>(val: T): T | never
 export declare function JsonStringify<T>(val: T): T | string
 export declare function thousands(num: any): string
