@@ -1,0 +1,42 @@
+{
+    //===========================================
+    //============= Editor ======================
+    //===========================================
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    // vetur  template 根据ts 提示
+    "vetur.experimental.templateInterpolationService": true,
+    //===========================================
+    //============= emmet =======================
+    //===========================================
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showAbbreviationSuggestions": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.syntaxProfiles": {
+            "vue-html": "html",
+            "vue": "html",
+            "javascript": "javascriptreact",
+            "xml": {
+            "attr_quotes": "single"
+        }
+    },
+    "emmet.includeLanguages": {
+        "jsx-sublime-babel-tags": "javascriptreact"
+    },
+    // ===========================================
+    // ================ Eslint ===================
+    // ===========================================
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "typescript",
+        "typescriptreact",
+        "json"
+    ],
+}

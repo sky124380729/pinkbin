@@ -1,3 +1,3 @@
-export default {
-    
-}
+import { defineConfig } from 'rollup'
+
+export default defineConfig({})
