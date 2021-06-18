@@ -11,8 +11,14 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "",
-	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sky124380729/pinkbin.git",
+		"directory": "packages/vuehooks"
+	},
+	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/vuehooks#readme",
+	"author": "levi",
+	"license": "MIT",
 	"devDependencies": {
 		"vue": "^3.1.1"
 	},

@@ -1,6 +1,6 @@
 {
 	"name": "@pinkbin/utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "index.js",
 	"module": "dist/utils.js",
@@ -11,6 +11,12 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "",
-	"license": "ISC"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sky124380729/pinkbin.git",
+		"directory": "packages/utils"
+	},
+	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/utils#readme",
+	"author": "levi",
+	"license": "MIT"
 }
