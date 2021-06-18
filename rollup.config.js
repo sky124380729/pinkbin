@@ -1,23 +1,28 @@
 import { defineConfig } from 'rollup'
-// import { resolve } from 'path'
+import { resolve } from 'path'
 import typescript from 'rollup-plugin-typescript2'
 
 export default defineConfig({
-	input: ['./packages/utils/main.ts'],
+	input: {
+		utils: './packages/utils/main.ts',
+		vuehooks: './packages/vuehooks/main.ts'
+	},
 	output: [
 		{
 			format: 'es',
-			file: 'dist/utils.js'
+			dir: 'dist'
 		}
 	],
+	external: ['vue'],
 	plugins: [
 		typescript({
-			// tsconfig: resolve(__dirname, 'tsconfig.json'),
-			// tsconfigOverride: {
-			// 	compilerOptions: {
-			// 		declaration: true
-			// 	}
-			// }
+			tsconfig: resolve(__dirname, 'tsconfig.json'),
+			tsconfigOverride: {
+				compilerOptions: {
+					declaration: true,
+					declarationDir: 'dist/types'
+				}
+			}
 		})
 	]
 })

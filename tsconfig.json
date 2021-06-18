@@ -17,8 +17,6 @@
       "lib": ["esnext", "dom"],
       "types": ["node"],
       "rootDir": ".",
-      "declaration": true,
-      // "declarationDir": "dist/types",
       "paths": {
         // "@vue/compat": ["packages/vue-compat/src"],
         // "@vue/*": ["packages/*/src"],
