@@ -24,11 +24,11 @@ module.exports = {
 		}
 	},
 	setActionType: function (plop) {
-		plop.setActionType('build', function (answers) {
+		plop.setActionType('build', async function (answers) {
 			const { pkgs } = answers
-			pkgs.forEach(async (pkg) => {
+			for await (const pkg of pkgs) {
 				await execa('rollup', ['-c', '--environment', [`TARGET:${pkg}`].filter(Boolean).join(',')], { stdio: 'inherit' })
-			})
+			}
 		})
 	}
 }

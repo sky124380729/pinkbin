@@ -39,9 +39,9 @@ module.exports = {
 		}
 	},
 	setActionType: function (plop) {
-		plop.setActionType('release', function (answers) {
+		plop.setActionType('release', async function (answers) {
 			const { pkgs, version } = answers
-			pkgs.forEach(async (pkgName) => {
+			for await (const pkgName of pkgs) {
 				const pkgRoot = getPkgRoot(pkgName)
 				const pkgPath = path.resolve(pkgRoot, 'package.json')
 				const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'))
@@ -60,7 +60,7 @@ module.exports = {
 						throw e
 					}
 				}
-			})
+			}
 		})
 	}
 }

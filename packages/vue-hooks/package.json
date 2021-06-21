@@ -1,12 +1,12 @@
 {
-	"name": "@pinkbin/vuehooks",
-	"version": "1.0.0",
+	"name": "@pinkbin/vue-hooks",
+	"version": "0.0.2",
 	"description": "",
 	"main": "index.js",
-	"module": "dist/vuehooks.js",
+	"module": "dist/vue-hooks.js",
 	"typings": "./index.d.ts",
 	"buildOptions": {
-		"name": "@pinkbin/vuehooks"
+		"name": "@pinkbin/vue-hooks"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -14,9 +14,9 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sky124380729/pinkbin.git",
-		"directory": "packages/vuehooks"
+		"directory": "packages/vue-hooks"
 	},
-	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/vuehooks#readme",
+	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/vue-hooks#readme",
 	"author": "levi",
 	"license": "MIT",
 	"devDependencies": {
