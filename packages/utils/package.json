@@ -1,7 +1,7 @@
 {
 	"name": "@pinkbin/utils",
-	"version": "1.0.7",
-	"description": "",
+	"version": "0.0.1",
+	"description": "some common utils",
 	"main": "index.js",
 	"module": "dist/utils.js",
 	"typings": "./index.d.ts",

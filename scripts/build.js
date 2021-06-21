@@ -10,12 +10,12 @@ const pkgs = fs.readdirSync(pkgDir, { encoding: 'utf-8' }).filter((item) => {
 
 module.exports = {
 	generator: {
-		description: 'build pkg',
+		description: 'build package',
 		prompts: [
 			{
 				type: 'checkbox',
 				name: 'pkgs',
-				message: 'choose what pkg you want to build',
+				message: 'Please choose the packages you want to build',
 				choices: pkgs
 			}
 		],
