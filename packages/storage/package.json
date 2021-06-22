@@ -1,0 +1,22 @@
+{
+	"name": "@pinkbin/storage",
+	"version": "0.0.1",
+	"description": "storage",
+	"main": "index.js",
+	"module": "dist/storage.js",
+	"typings": "./index.d.ts",
+	"buildOptions": {
+		"name": "@pinkbin/storage"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sky124380729/pinkbin.git",
+		"directory": "packages/storage"
+	},
+	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/storage#readme",
+	"author": "levi",
+	"license": "MIT"
+}
