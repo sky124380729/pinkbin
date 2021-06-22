@@ -1,6 +1,6 @@
 {
 	"name": "@pinkbin/utils",
-	"version": "0.0.1",
+	"version": "0.0.4",
 	"description": "some common utils",
 	"main": "index.js",
 	"module": "dist/utils.js",
