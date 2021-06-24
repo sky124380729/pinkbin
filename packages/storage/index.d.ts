@@ -13,3 +13,4 @@ declare const storage: {
 	local: Store
 	session: Store
 }
+export = storage
