@@ -18,5 +18,11 @@
 	},
 	"homepage": "https://github.com/sky124380729/pinkbin/tree/master/packages/storage#readme",
 	"author": "levi",
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"js-cookie": "^2.2.1"
+	},
+	"devDependencies": {
+		"@types/js-cookie": "^2.2.6"
+	}
 }

@@ -1,3 +1,5 @@
+import type { CookiesStatic } from 'js-cookie'
+
 declare type StorageType = 'localStorage' | 'sessionStorage'
 declare class Store {
 	store: Storage
@@ -9,8 +11,11 @@ declare class Store {
 	clear(): void
 	forEach(callback: (key: string, val: any) => void): void
 }
+
 declare const storage: {
 	local: Store
 	session: Store
+	cookie: CookiesStatic
 }
+
 export = storage

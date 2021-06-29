@@ -1,8 +1,9 @@
 import { defineConfig } from 'rollup'
 import path from 'path'
 import rimraf from 'rimraf'
-import typescript from 'rollup-plugin-typescript2'
+import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
+import typescript from 'rollup-plugin-typescript2'
 // import { terser } from 'rollup-plugin-terser'
 
 if (!process.env.TARGET) {
@@ -36,6 +37,8 @@ export default defineConfig({
 	},
 	external: ['vue'],
 	plugins: [
+		commonjs(),
+		nodeResolve(),
 		typescript({
 			tsconfig: path.resolve(__dirname, 'tsconfig.json'),
 			tsconfigOverride: {
@@ -43,8 +46,8 @@ export default defineConfig({
 					declaration: false
 				}
 			}
-		}),
-		nodeResolve()
+		})
+
 		// terser()
 	]
 })

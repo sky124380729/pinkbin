@@ -1,3 +1,5 @@
+import Cookie from 'js-cookie'
+
 import { JsonParse, JsonStringify } from '@pinkbin/utils'
 
 type StorageType = 'localStorage' | 'sessionStorage'
@@ -36,7 +38,8 @@ class Store {
 
 const storage = {
 	local: new Store('localStorage'),
-	session: new Store('sessionStorage')
+	session: new Store('sessionStorage'),
+	cookie: Cookie
 }
 
 export default storage
