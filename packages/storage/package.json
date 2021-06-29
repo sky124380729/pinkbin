@@ -1,6 +1,6 @@
 {
 	"name": "@pinkbin/storage",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "storage",
 	"main": "index.js",
 	"module": "dist/storage.js",
