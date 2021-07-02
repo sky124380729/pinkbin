@@ -1,11 +1,14 @@
 {
 	"name": "@pinkbin/utils",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"description": "some common utils",
 	"main": "index.js",
 	"module": "dist/utils.js",
 	"typings": "dist/utils.d.ts",
-	"files": ["index.js", "dist"],
+	"files": [
+		"index.js",
+		"dist"
+	],
 	"buildOptions": {
 		"name": "@pinkbin/utils"
 	},
