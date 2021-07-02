@@ -1,11 +1,14 @@
 {
 	"name": "@pinkbin/vue-hooks",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"description": "some vue3 hooks",
 	"main": "index.js",
 	"module": "dist/vue-hooks.js",
 	"typings": "dist/vue-hooks.d.ts",
-	"files": ["index.js", "dist"],
+	"files": [
+		"index.js",
+		"dist"
+	],
 	"buildOptions": {
 		"name": "@pinkbin/vue-hooks"
 	},
