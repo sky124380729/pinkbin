@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export function deepMerge<T = any>(src: any, target: any): T {
 	let key: string
 	for (key in target) {

@@ -1,1 +1,1 @@
-module.exports = require('./dist/vue-hooks')
+module.exports = require('./dist/vue-hooks.js')

@@ -4,7 +4,8 @@
 	"description": "storage",
 	"main": "index.js",
 	"module": "dist/storage.js",
-	"typings": "./index.d.ts",
+	"typings": "dist/storage.d.ts",
+	"files": ["index.js", "dist"],
 	"buildOptions": {
 		"name": "@pinkbin/storage"
 	},

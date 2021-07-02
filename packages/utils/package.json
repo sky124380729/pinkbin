@@ -4,7 +4,8 @@
 	"description": "some common utils",
 	"main": "index.js",
 	"module": "dist/utils.js",
-	"typings": "./index.d.ts",
+	"typings": "dist/utils.d.ts",
+	"files": ["index.js", "dist"],
 	"buildOptions": {
 		"name": "@pinkbin/utils"
 	},

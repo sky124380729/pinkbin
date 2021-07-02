@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export function flowRight(...fns: Fn[]) {
 	return function (value: any) {
 		while (fns.length) {

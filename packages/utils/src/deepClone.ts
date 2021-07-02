@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export function deepClone<T extends { hasOwnProperty: any }>(obj: T): T {
 	if (!obj) return obj
 	const result = (Array.isArray(obj) ? [] : {}) as any

@@ -18,9 +18,10 @@
       "types": ["node"],
       "rootDir": ".",
       "paths": {
-        // "@vue/compat": ["packages/vue-compat/src"],
-        // "@vue/*": ["packages/*/src"],
-        // "vue": ["packages/vue/src"]
+        "@pinkbin/utils": ["packages/utils/src"],
+        "@pinkbin/storage": ["packages/storage/src"],
+        "@pinkbin/vue-hooks": ["packages/vue-hooks/src"],
+        "@pinkbin/*": ["packages/*/src"]
       },
     },
     "include": [

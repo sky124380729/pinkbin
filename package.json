@@ -16,6 +16,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@microsoft/api-extractor": "^7.17.1",
 		"@rollup/plugin-commonjs": "^19.0.0",
 		"@rollup/plugin-node-resolve": "^13.0.0",
 		"@rollup/plugin-typescript": "^8.2.1",

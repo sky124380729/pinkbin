@@ -1,1 +1,1 @@
-module.exports = require('./dist/storage')
+module.exports = require('./dist/storage.js')

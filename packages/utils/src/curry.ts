@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export function curry(fn: Fn) {
 	return function curried(...args: any[]) {
 		if (args.length < fn.length) {

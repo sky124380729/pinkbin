@@ -4,7 +4,8 @@
 	"description": "some vue3 hooks",
 	"main": "index.js",
 	"module": "dist/vue-hooks.js",
-	"typings": "./index.d.ts",
+	"typings": "dist/vue-hooks.d.ts",
+	"files": ["index.js", "dist"],
 	"buildOptions": {
 		"name": "@pinkbin/vue-hooks"
 	},

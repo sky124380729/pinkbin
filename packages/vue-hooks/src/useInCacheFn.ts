@@ -1,4 +1,8 @@
 import { nextTick, onActivated, onMounted } from 'vue'
+
+/**
+ * @public
+ */
 export function useInCacheFn(hook: Fn) {
 	let mounted: boolean
 

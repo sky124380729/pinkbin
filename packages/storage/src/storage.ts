@@ -1,10 +1,20 @@
 import Cookie from 'js-cookie'
+import type { CookiesStatic } from 'js-cookie'
 
 import { JsonParse, JsonStringify } from '@pinkbin/utils'
 
-type StorageType = 'localStorage' | 'sessionStorage'
+/** @public */
+export type StorageType = 'localStorage' | 'sessionStorage'
 
-class Store {
+/** @public */
+export interface IStorage {
+	local: Store
+	session: Store
+	cookie: CookiesStatic
+}
+
+/** @public */
+export class Store {
 	store: Storage
 	constructor(key: StorageType) {
 		if (key === 'localStorage') {
@@ -36,7 +46,8 @@ class Store {
 	}
 }
 
-const storage = {
+/** @public */
+const storage: IStorage = {
 	local: new Store('localStorage'),
 	session: new Store('sessionStorage'),
 	cookie: Cookie
