@@ -3,7 +3,7 @@ const path = require('path')
 const pkgDir = path.join(__dirname, '../packages')
 const execa = require('execa')
 const chalk = require('chalk')
-const getPkgRoot = (pkg) => path.resolve(__dirname, '../packages/' + pkg)
+const { pack, getPkgRoot } = require('./utils')
 const run = (bin, args, opts = {}) => execa(bin, args, { stdio: 'inherit', ...opts })
 
 const pkgs = fs.readdirSync(pkgDir, { encoding: 'utf-8' }).filter((item) => {
@@ -41,18 +41,10 @@ module.exports = {
 	setActionType: function (plop) {
 		plop.setActionType('release', async function (answers) {
 			const { pkg: pkgName, version } = answers
-			// Because of the dependencies, let's build all the packages first
-			/* for await (const pkgName of pkgs) {
-				const pkgRoot = getPkgRoot(pkgName)
-				const pkgPath = path.resolve(pkgRoot, 'package.json')
-				const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'))
-				if (pkg.private) return
-				await execa('rollup', ['-c', '--environment', [`TARGET:${pkgName}`].filter(Boolean).join(',')], { stdio: 'inherit' })
-			} */
 			const pkgRoot = getPkgRoot(pkgName)
 			const pkgPath = path.resolve(pkgRoot, 'package.json')
 			const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'))
-			await execa('rollup', ['-c', '--environment', [`TARGET:${pkgName}`].filter(Boolean).join(',')], { stdio: 'inherit' })
+			await pack(pkgName)
 			if (pkg.private) return
 			try {
 				await run('yarn', ['publish', '--new-version', version, '--access', 'public'], {
