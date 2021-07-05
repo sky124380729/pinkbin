@@ -1,5 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+/// <reference path="../../../node_modules/@types/js-cookie/index.d.ts" />
+
 import Cookie from 'js-cookie'
-import type { CookiesStatic } from 'js-cookie'
 
 import { JsonParse, JsonStringify } from '@pinkbin/utils'
 
@@ -10,7 +12,7 @@ export type StorageType = 'localStorage' | 'sessionStorage'
 export interface IStorage {
 	local: Store
 	session: Store
-	cookie: CookiesStatic
+	cookie: Cookies.CookiesStatic
 }
 
 /** @public */
