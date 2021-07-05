@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/triple-slash-reference
-/// <reference path="../../../node_modules/@types/js-cookie/index.d.ts" />
+/// <reference types="@types/js-cookie" />
 
 import Cookie from 'js-cookie'
 
