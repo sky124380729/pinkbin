@@ -26,7 +26,7 @@ module.exports = {
 	},
 	setActionType: function (plop) {
 		plop.setActionType('build', async function (answers) {
-			const { pkgs } = answers
+			let { pkgs } = answers
 			// 由于其他包可能依赖utils，因此先编译utils
 			if (pkgs.includes('utils')) {
 				pkgs = ['utils', ...pkgs.filter((v) => v !== 'utils')]
